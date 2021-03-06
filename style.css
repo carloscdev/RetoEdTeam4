@@ -34,7 +34,23 @@ h2, i {
 }
 .active .description {
   display: block;
-  min-height: 100px;
+}
+.active p {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeTop;
+}
+@keyframes fadeTop {
+  0% {
+    z-index: 0;
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    z-index: 1;
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 p {
   color: var(--black-light-color);

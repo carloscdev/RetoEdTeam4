@@ -2,7 +2,7 @@ const questionItem = document.getElementsByClassName(
   "questions__container--item"
 );
 document.querySelectorAll(".item").forEach((el) => {
-  el.addEventListener("click", function addRemoveClass() {
+  el.addEventListener("click", function questionItemActive() {
     const indexItem = this.parentNode.className;
     for (let i = 0; i < questionItem.length; i++) {
       questionItem[i].className = "questions__container--item";
