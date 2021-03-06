@@ -7,7 +7,7 @@ document.querySelectorAll(".item").forEach((el) => {
     for (let i = 0; i < questionItem.length; i++) {
       questionItem[i].className = "questions__container--item";
     }
-    if (indexItem == "questions__container--item") {
+    if (indexItem === "questions__container--item") {
       this.parentNode.className = "questions__container--item active";
     }
   });
